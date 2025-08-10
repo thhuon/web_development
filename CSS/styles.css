@@ -1,0 +1,50 @@
+body {
+            background-color: lightblue;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        /* 2. fonts 
+        - Google Fonts
+        */
+        h1{
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-left-style: double;
+            border-right-style: double;
+            border-left-width: 10px;
+            border-left-color: silver;
+            color: darkblue;
+            font-family: "Playwrite AU NSW";
+        }
+        p {
+            background-color:grey; 
+            color:darkblue;
+            font-family: consolas, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: purple dotted underline;
+            font-size: 20px;
+        }
+
+        /* 3. borders: dashed, dotted, ridge, inset, outset, etc*/
+        #p1
+        {
+            border-style:ridge;
+            border-width: 5px;
+            border-color: darkblue;
+            border-radius: 10px;
+            padding: 5px; /* padding is the space inside the border */
+            background-color: lightgrey;
+            color: darkblue;
+        }
+
+        .odd
+        {
+            color: red
+        }
+
+        .even
+        {
+            color: green
+        }
+    
