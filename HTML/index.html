@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--1. basic structure of html-->
+<html lang="en">
+<head>
+	<!--11.meta tags-->
+	<!--Meta tags provide metadata about the HTML document-->
+	<!--meta dont need closing tag-->
+	<title>My homepage</title>
+	<meta charset ="UTF-8"> 
+	<meta name="description" content="HTML tutorial for beginners">
+	<meta name="keywords" content="HTML, tutorial, beginners">
+	<meta name="author" content="Bro Code">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="refresh" content="30">
+	<title>My homepage</title>
+</head>
+<body style = "background-color: lightpink;">
+    <h1>I like pizza</h1>
+	<h2>I like pizza</h2>
+	<h3>I like pizza</h3>
+	<br>	<!-- br and hr have no closing tag -->
+	<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fuga commodi optio magnam dolore? Tempore iure quo impedit esse, laborum, id cum sed labore fugiat placeat inventore perferendis, aperiam ab.</p>
+	<hr>
+
+	<!--2. hyperlinks-->
+	<!--target = _self is default-->
+	<a href = "https://www.geeksforgeeks.org/" target = _blank title = "This is a link to GeeksForGreeks">
+		GreeksForGreeks
+	</a>
+
+	<br>
+
+	<a href = "https://www.geeksforgeeks.org/" target = _self title = "This is a link to GeeksForGreeks 2">
+		GreeksForGreeks
+	</a>
+
+	<br> 
+
+	<a href = "index2.html" target = _self>
+		Go to index2
+	</a>
+
+	<br>
+	<a href="mailto:thuyhuongac12@gmail.com" target = _self>
+		Send email
+	</a>
+
+	<!--3.image-->
+	<br>
+	<a href = "https://en.wikipedia.org/wiki/Cocomong" target = _blank>
+	<img src="/images/cocomong.jpg" alt="Cocomong" width="300" height="200" title = "This is a picture of Cocomong"> 
+	</a>
+
+	<!--4. audio-->
+	<br>
+	<audio controls autoplay muted loop src="videoplayback.mp3">
+		Your browser does not support the audio element.
+	</audio>
+ 
+	<!--5.video-->
+	<br>
+	<video controls loop src = "Bruno-Mars-Bonde-do-Brunão.mp4">
+		<source src = "Bruno-Mars-Bonde-do-Brunão.mp4">
+		<source src = "Bruno-Mars-Bonde-do-Brunão.WebM">
+		This is does not support HTML5 file audio.
+	</video>
+
+	<!--6.text formatting-->
+	<p>This is normal text</p>
+	<p>This is <b>bold</b> text</p>
+	<p>This is <i>italic</i> text</p>
+	<p>This is <big>big</big> text</p>
+	<p>This is <small>small</small> text</p>
+	<p>This is <sub>subscript</sub> text</p>
+	<p>This is <sup>superscipt</sup> text</p>
+	<p>This is <ins>inserted</ins> text</p>
+	<p>This is <del>deleted</del> text</p>
+	<p>This is <mark>marked</mark> text</p>
+
+	<!--7.lists-->
+	<!--ul = unordered list-->
+	<h4>Unordered list</h4>
+	<ul>
+		<li>Pizza dough</li>
+		<li>Tomato sauce</li>
+		<li>Cheese
+			<ul>
+				<li>Mozzarella cheese</li>
+				<li>Parmesan cheese</li>
+				<li>Cheddar cheese
+					<ul>
+						<li>Sharp cheddar</li>
+						<li>Mild cheddar</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<h4>Ordered list</h4>
+	<ol type = "A">
+		<li>Pizza dough</li>
+		<li>Tomato sauce</li>
+		<li>Cheese</li>
+	</ol>
+
+	<h4>Description List</h4>
+	<!--dt = description term
+	dd = description definition -->
+	<dl>
+		<dt>Pizza dough</dt>
+		<dd>Flour, water, yeast, salt</dd>
+		<dt>Tomato sauce</dt>
+		<dd>Crushed tomatoes, garlic, herbs</dd>
+		<dt>Cheese</dt>
+		<dd>Mozzarella cheese, grated</dd>
+	</dl>
+
+	<!--8.tables-->
+	<h3 align = "center">Store Hours</h3>
+	<table align="center" width = "700">
+		<!--tr = table row-->
+		<!--th = table header-->
+		<tr bgcolor = "lightblue">
+			<th width = "100">Sunday</th>
+			<th width = "100">Monday</th>
+			<th width = "100">Tuesday</th>
+			<th width = "100">Wednesday</th>
+			<th width = "100">Thursday</th>
+			<th width = "100">Friday</th>
+		</tr>
+
+		<tr bgcolor = "lightgreen" align = "center">
+			<th>Closed</th>
+			<td>9-5</td>
+			<td>9-5</td>
+			<td>9-5</td>
+			<td>9-5</td>
+			<td>9-5</td>
+		</tr>
+	</table>
+
+	<!--9.colors-->
+	<h1 style = "color: red;">This is red</h1>
+	<h1 style = "color: green;">This is green</h1>
+	<h1 style = "color: rgb(5,240,232);">This is cyan</h1>
+	<h1 style = "color: #28f005;">Don't know this color</h1>
+
+	<p style ="background-color: #222222; color:#28f005">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit
+	</p>
+
+	<!--10.span&div-->
+	<!--span = adds markup to text or portion of a document-->
+	<!--div = defines a division of a document-->
+	<h1>Hello!</h1>
+	<div style = "background-color: lightblue">
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			Quisquam, voluptatum. Quasi, cumque. Doloribus, voluptas.
+		</p>
+		<p>
+			<span style = "color: red;">Lorem ipsum dolor sit </span>
+			amet consectetur adipisicing elit. Unde dolorem iure ab rerum, 
+			 repellendus debitis quis hic nesciunt omnis ducimus illum molestias quisquam quasi nisi! Nemo delectus optio voluptatum error?
+		</p>
+	</div>
+
+	<!--12.frames-->
+	<!--iframe = inline frame, used to embed content from another source within the current HTML for ads-->
+	<iframe src = "https://www.youtube.com/embed/9bZkp7q19f0?autoplay=1&mute=1" 
+			width = "560" height = "315" frameborder = "0" 
+			allow = "accelerometer, autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen>
+	</iframe>
+
+	<iframe style="background-color:aquamarine" src = "index2.html" width = "300" height = "200" frameborder = "10" scrolling = "1">
+		Your browser does not support iframes.
+	</iframe>
+
+	<!--13.buttons-->
+	<a href="https://www.geeksforgeeks.org/" target = "_blank">
+		<button style="background-color:lightblue;color:white;border-radius:5px" type=button onclick="alert('Hello!')">Click Me!</button>
+		
+	</a>
+	
+	<button style="background-color:lightblue;color:white;border-radius:5px" type=button onclick="doSomething()">Click Me!</button>
+		<p id = "demo">Click the button to change this text.</p>
+		<script>
+			function doSomething() {
+				document.getElementById("demo").innerHTML = "Hello World!";
+			}
+		</script>
+
+	<!--13.form-->
+	<form action="action_page.php" method="POST">
+		<div>
+			<label for="fname">first name:</label>
+			<input type="text" id="fname" placeholder="Plese enter your first name" name="fname" required>
+		</div>
+
+		<br>
+		<div>
+			<label for="lname">last name:</label>
+			<input type="text" id="lname" placeholder="Plese enter your last name" name="lname" required>
+		</div>
+
+		<br>
+		<div>
+			<label for="password">password:</label>
+			<input type="password" id="password" placeholder="Plese enter your password" name="pass" required maxlength="8" required>
+		</div>
+
+		<br>
+		<div>
+			<label for="email">email:</label>
+			<input type="email" id="email" placeholder="abc@gmail.com" name="email" required>
+		</div>
+
+		<br>
+		<div>
+			<label for="phone">phone:</label>
+			<input type="tel" id="phone" placeholder="xx-xxxx-xxxx" name="phone" required>
+		</div>
+
+		<br>
+		<div>
+			<label for="bdate">birth date:</label>
+			<input type="date" id="bdate" name="brthdate" required>
+		</div>
+
+		<br>
+		<div>
+			<label for="quanity">quanity:</label>
+			<input type="number" id="quanity" name="quanity" min="0" max="99" value="1" required>
+		</div>
+
+		<br>
+		<div>
+			<label for="title">title:</label>
+			
+			<label for="Mr.">Mr.</label>
+			<input type="radio" id="Mr." name="title" value="Mr.">
+
+			<label for="Mrs.">Mrs.</label>
+			<input type="radio"	id="Mrs." name="title" value="Mrs.">
+
+			<label for="Ms.">Ms.</label>
+			<input type="radio" id="Ms." name="title" value="Ms.">
+		</div>
+
+		<br>
+		<div>
+			<label for="payment">title:</label>	
+			<select id="payment" name="payment" value="visa">
+				<option value="visa">Visa</option>
+				<option value="mastercard">MasterCard</option>
+				<option value="paypal">PayPal</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<br>
+		<div>
+			<label for="subcribe">subcribe:</label>	
+			<input type="checkbox" id="subcribe" name="subcribe" value="yes">
+		</div>
+
+
+
+	</form>
+</body>
+</html>
