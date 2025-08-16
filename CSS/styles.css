@@ -46,4 +46,60 @@ body {
         {
             color: green
         }
+
+        /* 4. background: */
+        body {
+            /* margin */
+            /* margin-top: 50px; 
+            margin-left: 50px; 
+            margin-right: 50px; 
+            margin-bottom: 50px;  */
+            /* or can use this instead */
+            /* margin: 50px; */
+            
+            background-image: url("Halong Bay Island.jpg");
+            background-repeat: no-repeat; /* prevents the background from repeating */
+            background-attachment: fixed; /* keeps the background fixed during scrolling */
+            background-position: center; /* centers the background image */
+            background-size: cover; /* scales the background image to cover the entire viewport */
+        }
+
+        h1{
+            background: linear-gradient(to right, lightblue, white);
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+
+        p{
+            background: linear-gradient(to right, lightblue, white);
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+
+        /* 5. margin is space around an element, outside the border */
+        /* padding is the space between the content and the border */
+        #box1
+        {
+            border: 5px solid darkblue;
+            width: 250px;
+            height: 250px;
+            font-size: 22px;
+            background: greenyellow;
+            padding: 50px; /* padding inside the box */
+            /* margin: 50%; sets margin to 50% of the viewport width */
+            margin-left: auto;
+            margin-right: auto;
+            /* centers the box horizontally */
+
+        }
+
+        #box2
+        {
+            border: 5px solid darkblue;
+            width: 250px;
+            height: 300px;
+            font-size: 22px;
+            background: dodgerblue;
+        }
+
     
