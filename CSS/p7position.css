@@ -1,0 +1,21 @@
+    #box1
+    {
+        border: 5px solid darkblue;
+        width: 250px;
+        height: 250px;
+        font-size: 22px;
+        background: greenyellow;
+        position: static;
+    }
+
+    #box2
+    {
+        border: 5px solid darkblue;
+        width: 250px;
+        height: 300px;
+        font-size: 22px;
+        background: dodgerblue;
+        position: relative;
+        top: 50px;
+    }
+        
