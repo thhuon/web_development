@@ -90,6 +90,7 @@ body {
             margin-left: auto;
             margin-right: auto;
             /* centers the box horizontally */
+            /* posittion: static; default position */
         }
 
         #box2
@@ -120,5 +121,48 @@ body {
             /* clear:left; clears the float, ensuring the paragraph starts below the floated elements */
             clear: both; /* clears both left and right floats */
         }
+
+        /*8. pusedo class*/
+        /* default color */
+        a:link{
+            color: lawngreen;
+        }
+
+        /* clicked */
+        a:visited{
+            color:grey;
+        }
+
+        /* move cusor around elements */
+        a:hover{
+            color: tomato;
+        }
+
+        /* click on the link */
+        a:active{
+            color: yellow;
+        }
+
+        button:hover{
+            color: grey;
+            background-color: black;
+        }
+
+        button:active{
+            background-color: white;
+        }
+
+        /* li:nth-child(2){
+            background-color: tomato;
+        } */
+
+        /* li:nth-child(odd){
+            background-color: skyblue;
+        } */
+
+        li:nth-child(4n){
+            background-color: powderblue;
+        }
+            
 
     
