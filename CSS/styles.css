@@ -208,7 +208,70 @@ body {
             /* matrix (scale x, skew y, skew x, scale y, translate x, translate y) */
             transform: matrix(1, 0.5, 0.5, 1, 0, 0);
             /* transform: matrix(0, 0, 0, 0, 0, 0); -> disappear*/
-
         }
+        /* 11. animation */
+        #box11
+        {
+            width: 250px;
+            height: 250px;
+            font-size: 225px;
+            background-color: lightblue;
+            text-align: center;
+            /* animation: mySlide;
+            animation-iteration-count: infinite;
+            animation-play-state: paused; paused when the page loads
+            animation-play-state: running; // starts the animation 
+            animation-delay: 0s;
+            animation-timing-function: ease-in; // ease-in, ease-out, linear, etc 
+            animation-duration: 5s; 
+            */
+            /* animation: duration timing-function delay interation-count play-state name*/
+        }
+
+        #box11:hover
+        {            
+            /* animation: 5s ease-in 0s infinite running mySlide; */
+        }
+
+        #box11:active
+        {
+            animation: 5s ease-in 0s infinite running myColorChange;
+        }
+
+        @keyframes mySlide
+        {
+            from{margin-left: 100%;}
+            to{margin-left: 0%;}
+        }
+
+        @keyframes myRotate
+        {
+            100%{transform: rotate(360deg);}
+            100%{transform: rotate(360deg);}
+        }
+
+        @keyframes myOpacity
+        {
+            50%{opacity: 0;}
+        }
+
+        @keyframes myScale
+        {
+            50%{transform: scale(0.5,0.5);}
+        }
+
+        @keyframes myColorChange
+        {
+            0%{background-color: tomato;}
+            20%{background-color: lightpink;}
+            40%{background-color: lightgreen;}
+            60%{background-color: lightsalmon;}
+            80%{background-color: lightcyan;}
+            100%{background-color: lightcoral;}
+        }
+
+
+
+        
 
     
