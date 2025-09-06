@@ -1,0 +1,90 @@
+/* 1. flex-direction: set the main axis direction of flex items
+row (default): left to right
+row-reverse: right to left
+column: top to bottom
+column-reverse: bottom to top   
+*/
+/* 2. justify-content: align items along the main axis
+flex-start (default): items are packed toward the start of the flex-direction
+flex-end: items are packed toward the end of the flex-direction
+center: items are centered along the line
+space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+space-around: items are evenly distributed in the line with equal space (around) them
+space-evenly: items are evenly distributed in the line with equal space (between) them
+*/
+/* 3. align-items: align items along the cross axis
+flex-start (default): items are aligned toward the start of the cross axis
+flex-end: items are aligned toward the end of the cross axis
+center: items are centered along the cross axis
+baseline: items are aligned such as their baselines align
+*/
+/* 4. flex-wrap: control whether the flex container is single-line or 
+multi-line, and the direction of the cross axis
+nowrap (default): all flex items will be on one line
+wrap: flex items will wrap onto multiple lines, from top to bottom
+wrap-reverse: flex items will wrap onto multiple lines from bottom to top
+*/
+/* 5. align-content: align the flex container's lines within when there is extra space in the cross-axis,
+similar to how justify-content aligns individual items within the main-axis
+flex-start: lines are packed to the start of the container
+flex-end: lines are packed to the end of the container
+center: lines are packed to the center of the container
+space-between: lines are evenly distributed in the container; first line is at the start, last
+line is at the end
+space-around: lines are evenly distributed in the container with equal space (around) them
+space-evenly: lines are evenly distributed in the container with equal space (between) them
+*/
+/* 6. gap: set the gaps (gutters) between rows and columns
+column-gap: set the gap between columns
+row-gap: set the gap between rows
+gap: set both the row and column gaps
+*/
+/* 7. align-self: override the align-items value for a specific flex item
+auto (default): the element inherits the value of align-items on the parent flex container
+flex-start: the element is aligned to the start of the cross axis
+flex-end: the element is aligned to the end of the cross axis
+center: the element is centered along the cross axis
+baseline: the element is aligned such as its baseline aligns with the baselines of other items
+*/
+/* 8. order: specify the order of individual flex items
+Default value is 0. Items with the same order value are laid out in the source order.
+Items with lower order values are displayed first.
+Negative values are allowed.
+*/
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    border: 10px solid brown;
+    height: 90vh;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+    align-content: flex-start;
+    column-gap: 3em;
+    row-gap: 3em; 
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em; 
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: tomato;
+    align-self: center;
+}
+
+#box2{
+    background-color: lightyellow;
+}
+
+#box3{
+    background-color: lightgreen;
+}
+
+#box4{
+    background-color: lightblue;
+}
